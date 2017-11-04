@@ -1,0 +1,4 @@
+# OS files
+.DS_Store
+# Ignore vim swap files
+.*.swp
