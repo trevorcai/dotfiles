@@ -83,3 +83,11 @@ gpip() {
 
 # add git completion
 source ~/.git-completion.sh
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+FZF_TMUX=1
+FZF_CTRL_R_OPT="--preview 'echo {}' --preview-window down:3:hidden:wrap --bind '?:toggle-preview'"
+if command -v rg > /dev/null ; then
+  export FZF_DEFAULT_COMMAND='rg --files --color=never --hidden --glob ""'
+  FZF_CTRL_T_COMMAND="${FZF_DEFAULT_COMMAND}"
+fi
