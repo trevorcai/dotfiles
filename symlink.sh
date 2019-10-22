@@ -1,6 +1,8 @@
 #!/bin/sh
-# CAN ONLY BE RUN AS ./symlink.sh BECAUSE I USE PWD. THIS IS LAZY AND HACKY.
-# TODO Slice/dice the executable name so the script can be run from anywhere.
+# Can only be run as ./symlink.sh because i use `pwd`.
+
+# TODO: This is out of date (no .pip.conf) and hacky.
+# Switch to stow or bare git.
 
 # Stash any existing dotfiles.
 STASH_DIR="${HOME}/.saved_dotfiles"
