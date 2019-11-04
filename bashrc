@@ -81,6 +81,10 @@ gpip() {
     PIP_REQUIRE_VIRTUALENV="" pip "$@"
 }
 
+gpip3() {
+    PIP_REQUIRE_VIRTUALENV="" pip3 "$@"
+}
+
 # add git completion
 source ~/.git-completion.sh
 
