@@ -11,6 +11,7 @@ if isdirectory(expand('$HOME/.vim/bundle/Vundle.vim'))
   Plugin 'FelikZ/ctrlp-py-matcher'
   Plugin 'easymotion/vim-easymotion'
   Plugin 'junegunn/rainbow_parentheses.vim'
+  Plugin 'tpope/vim-surround'
   " More plugins here...
   call vundle#end()
 else
