@@ -8,7 +8,6 @@ if isdirectory(expand('$HOME/.vim/bundle/Vundle.vim'))
   call vundle#begin()
   Plugin 'VundleVim/Vundle.vim'
   Plugin 'ctrlpvim/ctrlp.vim'
-  Plugin 'FelikZ/ctrlp-py-matcher'
   Plugin 'easymotion/vim-easymotion'
   Plugin 'junegunn/rainbow_parentheses.vim'
   Plugin 'tpope/vim-surround'
@@ -94,12 +93,6 @@ let g:ctrlp_lazy_update = 100
 " Exclude git, hg, and npm directories from ctrl-p searches
 " \v = very magic -> e.g. all special characters have special meaning in regex.
 let g:ctrlp_custom_ignore = {'dir':  '\v\/(\.(git|hg|svn)|node_modules)$'}
-
-if has('python')
-  let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
-else
-  echo 'pymatcher requires +python compiled vim.'
-endif
 
 " If installed, use rg instead of grep and for ctrlp.
 " https://github.com/burntsushi/ripgrep

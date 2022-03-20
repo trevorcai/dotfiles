@@ -15,12 +15,5 @@
 	dc = diff --cached
 	drb = push origin --delete
 	unstage = reset HEAD --
-	darb = "!git branch --merged | grep -Ev '(^\\*|master$)' | xargs -n 1 git branch -d"
-	ps = "!f() { \
-		branch=`git symbolic-ref HEAD 2>/dev/null | cut -d'/' -f 3,4`; echo $branch; \
-		if [ $branch == 'master' -o $branch == 'production' ]; then \
-			echo "Pushing to $branch disallowed!"; else \
-			git push origin -u $branch; fi; \
-		}; f"
 [color]
 	ui = auto
