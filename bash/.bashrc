@@ -47,20 +47,7 @@ fi
 # Set bash completion to ignore case
 bind "set completion-ignore-case on"
 
-# Enable global pip
-gpip() {
-    PIP_REQUIRE_VIRTUALENV="" pip "$@"
-}
-
-gpip3() {
-    PIP_REQUIRE_VIRTUALENV="" pip3 "$@"
-}
-
-# add git completion
-[ -f ~/.git-completion.sh ] && source ~/.git-completion.sh
-
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-FZF_TMUX=1
 FZF_CTRL_R_OPT="--preview 'echo {}' --preview-window down:3:hidden:wrap --bind '?:toggle-preview'"
 if command -v rg > /dev/null ; then
   export FZF_DEFAULT_COMMAND='rg --files --color=never --hidden --glob ""'
