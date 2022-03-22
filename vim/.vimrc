@@ -98,8 +98,13 @@ let g:ctrlp_custom_ignore = {'dir':  '\v\/(\.(git|hg|svn)|node_modules)$'}
 " https://github.com/burntsushi/ripgrep
 if executable('rg')
   set grepprg=rg\ --color=never
-  let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
+  let g:ctrlp_user_command = 'rg %s --files --color=never'
 endif
+
+if executable('fd')
+  let g:ctrlp_user_command = 'fd --type f --color=never'
+endif
+
 
 " Activate RainbowParentheses for Python, C++
 augroup rainbow_parens

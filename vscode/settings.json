@@ -1,0 +1,7 @@
+{
+    "editor.autoClosingQuotes": "never",
+    "editor.autoClosingBrackets": "never",
+    "editor.minimap.enabled": false,
+    "window.autoDetectColorScheme": true,
+    "workbench.enableExperiments": false
+}

@@ -1,19 +1,28 @@
 [user]
 	email = trevorycai@gmail.com
 	name = Trevor Cai
-[push]
-	default = simple
 [core]
 	editor = vim
-	pager = less -F -X
+	pager = delta
 	precomposeunicode = true
 	excludesfile = ~/.gitignore_global
+[diff]
+	colorMoved = default
 [grep]
 	lineNumber = true
+[push]
+	default = simple
+[rebase]
+	autoStash = true
 [alias]
+	st = status --short --branch
 	sl = log --oneline
 	dc = diff --cached
 	drb = push origin --delete
 	unstage = reset HEAD --
+[interactive]
+	diffFilter = delta --color-only
 [color]
 	ui = auto
+[delta]
+	navigate = true  # use n and N to move between diff sections
