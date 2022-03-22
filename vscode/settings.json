@@ -1,7 +1,10 @@
 {
     "editor.autoClosingQuotes": "never",
     "editor.autoClosingBrackets": "never",
+    "editor.inlineSuggest.enabled": true,
     "editor.minimap.enabled": false,
+    "telemetry.telemetryLevel": "off",
+    "vim.hlsearch": true,
     "window.autoDetectColorScheme": true,
     "workbench.enableExperiments": false
 }
