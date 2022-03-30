@@ -3,7 +3,7 @@
 	name = Trevor Cai
 [core]
 	editor = vim
-	pager = delta
+	pager = less -F -X
 	precomposeunicode = true
 	excludesfile = ~/.gitignore_global
 [diff]
@@ -20,9 +20,5 @@
 	dc = diff --cached
 	drb = push origin --delete
 	unstage = reset HEAD --
-[interactive]
-	diffFilter = delta --color-only
 [color]
 	ui = auto
-[delta]
-	navigate = true  # use n and N to move between diff sections

@@ -7,7 +7,7 @@ echo 'Press enter to continue after each prompt.'
 read -p 'Install Homebrew.' unused
 
 echo 'Installing useful utilities.'
-brew install exa fd fzf git-delta htop ripgrep stow tldr tmux tree
+brew install exa fd fzf htop ripgrep stow tldr tmux tree
 
 echo 'Setting up fzf...'
 $(brew --prefix)/opt/fzf/install

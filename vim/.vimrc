@@ -38,8 +38,6 @@ set number
 set ruler
 " Keep status line always on
 set laststatus=2
-" Set textwidth; this may be reset by specific language configs.
-set textwidth=80
 " Wildmenu provides visual bar including other files with the prefix.
 set wildmenu
 " Case insensitive wildmenu completion
