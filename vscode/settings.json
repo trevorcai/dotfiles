@@ -8,7 +8,7 @@
     "vim.easymotion": true,
     "vim.hlsearch": true,
     "vim.leader": ",",
-    "window.autoDetectColorScheme": true,
     "workbench.activityBar.visible": false,
+    "workbench.colorTheme": "Default Light+",
     "workbench.enableExperiments": false
 }
