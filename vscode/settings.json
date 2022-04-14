@@ -1,10 +1,14 @@
 {
     "editor.autoClosingQuotes": "never",
     "editor.autoClosingBrackets": "never",
+    "editor.fontSize": 11,
     "editor.inlineSuggest.enabled": true,
     "editor.minimap.enabled": false,
     "telemetry.telemetryLevel": "off",
+    "vim.easymotion": true,
     "vim.hlsearch": true,
+    "vim.leader": ",",
     "window.autoDetectColorScheme": true,
+    "workbench.activityBar.visible": false,
     "workbench.enableExperiments": false
 }
