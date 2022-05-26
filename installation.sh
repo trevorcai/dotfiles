@@ -12,5 +12,7 @@ brew install bat exa fd fzf htop ripgrep stow tldr tmux tree
 echo 'Setting up fzf...'
 $(brew --prefix)/opt/fzf/install
 
-read -p 'Install symlinks using stow.' unused
+echo 'Installing some symlinks using stow...'
+stow --target=$HOME git tmux vim zsh
+
 read -p 'Install VSCode & symlink settings.json in.' unused
