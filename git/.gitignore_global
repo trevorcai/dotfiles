@@ -2,3 +2,5 @@
 .DS_Store
 # Ignore vim swap files
 .*.swp
+# Ignore _x directories.
+_x/
