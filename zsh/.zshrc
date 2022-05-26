@@ -9,6 +9,12 @@ PS1="%{$fg[green]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$reset
 # Alias ls to exa if installed.
 command -v exa > /dev/null && alias ls=exa
 
+# bat should adapt to themes
+command -v bat > /dev/null && alias bat="bat --theme=\$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo default || echo GitHub)"
+
+# rg config
+[ -f ~/.rgrc ] && export RIPGREP_CONFIG_PATH="$HOME/.rgrc"
+
 # FZF. Prefer fd over rg if possible.
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 if command -v fd > /dev/null ; then
