@@ -15,4 +15,7 @@ $(brew --prefix)/opt/fzf/install
 echo 'Installing some symlinks using stow...'
 stow --target=$HOME git tmux vim zsh
 
-read -p 'Install VSCode & symlink settings.json in.' unused
+read -p 'Install VSCode.' unused
+echo 'Linking vscode settings and keybindings in.'
+VSCODE_DIR="$HOME/Library/Application Support/Code/User"
+rm -f "$VSCODE_DIR/keybindings.json" "$VSCODE_DIR/settings.json" && stow --target="$VSCODE_DIR" vscode
