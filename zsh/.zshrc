@@ -40,3 +40,6 @@ elif command -v rg > /dev/null ; then
 fi
 FZF_CTRL_R_OPTS="--preview 'echo {}' --preview-window down:3:hidden:wrap --bind '?:toggle-preview'"
 FZF_ALT_C_OPTS="--preview 'tree -C {} | head -10'"
+
+# secrets
+[ -f ~/.secrets ] && source ~/.secrets
