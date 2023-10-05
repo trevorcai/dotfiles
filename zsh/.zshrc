@@ -14,6 +14,11 @@ zstyle ':completion:*'  matcher-list 'm:{a-z}={A-Z}'
 autoload -U colors && colors
 PS1="%{$fg[green]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$reset_color%}% %{$fg[green]%}\$ %{$reset_color%}%"
 
+# c-x c-e for long edits
+autoload -z edit-command-line
+zle -N edit-command-line
+bindkey "^X^E" edit-command-line
+
 # Alias ls to eza if installed.
 command -v eza > /dev/null && alias ls=eza
 
