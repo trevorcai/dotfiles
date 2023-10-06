@@ -1,3 +1,11 @@
+setopt HIST_EXPIRE_DUPS_FIRST  # Remove dupes.
+setopt HIST_IGNORE_DUPS  # Don't write consecutive dupes.
+HISTSIZE=10000000
+SAVEHIST=10000000
+
+bindkey -e  # emacs key bindings
+bindkey '^U' backward-kill-line  # ctrl+U deletes from cursor to start of line
+
 # smartcase autocomplete.
 autoload -U compinit  && compinit
 zstyle ':completion:*'  matcher-list 'm:{a-z}={A-Z}'
