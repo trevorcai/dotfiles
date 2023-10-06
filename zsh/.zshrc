@@ -6,8 +6,8 @@ zstyle ':completion:*'  matcher-list 'm:{a-z}={A-Z}'
 autoload -U colors && colors
 PS1="%{$fg[green]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$reset_color%}% %{$fg[green]%}\$ %{$reset_color%}%"
 
-# Alias ls to exa if installed.
-command -v exa > /dev/null && alias ls=exa
+# Alias ls to eza if installed.
+command -v eza > /dev/null && alias ls=eza
 
 # bat should adapt to themes
 command -v bat > /dev/null && alias bat="bat --theme=\$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo default || echo GitHub)"
