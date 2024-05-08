@@ -2,5 +2,7 @@
 .DS_Store
 # Ignore vim swap files
 .*.swp
+# python cache
+__pycache__/
 # Ignore _x directories.
 _x/
