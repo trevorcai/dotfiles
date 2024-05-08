@@ -11,7 +11,7 @@
     "vim.easymotion": true,
     "vim.hlsearch": true,
     "vim.leader": ",",
-    "workbench.activityBar.visible": false,
+    "workbench.activityBar.location": "hidden",
     "workbench.colorTheme": "Default Light Modern",
     "workbench.enableExperiments": false,
     "workbench.startupEditor": "none"
