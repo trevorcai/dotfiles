@@ -41,7 +41,7 @@ fi
 FZF_CTRL_R_OPTS="--preview 'echo {}' --preview-window down:3:hidden:wrap --bind '?:toggle-preview'"
 FZF_ALT_C_OPTS="--preview 'tree -C {} | head -10'"
 
-TLDR_AUTO_UPDATE_DISABLED=1
+export TLDR_AUTO_UPDATE_DISABLED=1
 
 # secrets
 [ -f ~/.secrets ] && source ~/.secrets
