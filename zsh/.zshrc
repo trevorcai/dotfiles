@@ -43,12 +43,5 @@ FZF_ALT_C_OPTS="--preview 'tree -C {} | head -10'"
 
 TLDR_AUTO_UPDATE_DISABLED=1
 
-# Omnivore Save
-omnivore_save () {
-  local url=$1
-  local uuid=$(uuidgen)
-  curl -X POST -d '{ "query": "mutation SaveUrl($input: SaveUrlInput!) { saveUrl(input: $input) { ... on SaveSuccess { url clientRequestId } ... on SaveError { errorCodes message } } }", "variables": { "input": { "clientRequestId": "'"$uuid"'", "source": "api", "url": "'"$url"'" }} }' -H 'content-type: application/json' -H "authorization: $OMNIVORE_API_KEY" https://api-prod.omnivore.app/api/graphql
-}
-
 # secrets
 [ -f ~/.secrets ] && source ~/.secrets
