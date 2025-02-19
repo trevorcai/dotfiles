@@ -25,6 +25,8 @@ command -v eza > /dev/null && alias ls=eza
 # bat should adapt to themes
 command -v bat > /dev/null && alias bat="bat --theme=\$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo default || echo GitHub)"
 
+[ -x /usr/local/bin/brew ] && alias x86_brew=/usr/local/bin/brew
+
 # rg config
 [ -f ~/.rgrc ] && export RIPGREP_CONFIG_PATH="$HOME/.rgrc"
 
