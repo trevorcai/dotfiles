@@ -15,6 +15,10 @@ $(brew --prefix)/opt/fzf/install
 echo 'Installing some symlinks using stow...'
 stow --target=$HOME git tmux vim zsh
 
+ZED_DIR="$HOME/.config/zed"
+mkdir -p "$ZED_DIR"
+stow --target="$ZED_DIR" zed
+
 read -p 'Install VSCode.' unused
 echo 'Linking vscode settings and keybindings in.'
 VSCODE_DIR="$HOME/Library/Application Support/Code/User"

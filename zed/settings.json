@@ -1,0 +1,23 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "assistant": {
+    "default_model": {
+      "provider": "openai",
+      "model": "o3"
+    },
+    "version": "2"
+  },
+  "collaboration_panel": { "button": false },
+  "features": { "edit_prediction_provider": "copilot" },
+  "notification_panel": { "button": false },
+  "telemetry": { "diagnostics": false, "metrics": false },
+  "vim_mode": true,
+  "vim": { "use_system_clipboard": "never" }
+}
