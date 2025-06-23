@@ -19,7 +19,7 @@ ZED_DIR="$HOME/.config/zed"
 mkdir -p "$ZED_DIR"
 stow --target="$ZED_DIR" zed
 
-read -p 'Install VSCode.' unused
-echo 'Linking vscode settings and keybindings in.'
-VSCODE_DIR="$HOME/Library/Application Support/Code/User"
-rm -f "$VSCODE_DIR/keybindings.json" "$VSCODE_DIR/settings.json" && stow --target="$VSCODE_DIR" vscode
+read -p 'Install Cursor.' unused
+echo 'Linking Cursor settings and keybindings in.'
+CURSOR_DIR="$HOME/Library/Application Support/Cursor/User"
+rm -f "$CURSOR_DIR/settings.json" && stow --target="$CURSOR_DIR" cursor

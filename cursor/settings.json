@@ -1,0 +1,7 @@
+{
+    "vim.easymotion": true,
+    "vim.hlsearch": true,
+    "vim.leader": ",",
+    "workbench.colorTheme": "Solarized Light",
+    "ruff.lineLength": 100,
+}
