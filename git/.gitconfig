@@ -10,6 +10,8 @@
 	colorMoved = default
 [grep]
 	lineNumber = true
+[pull]
+	ff = only
 [push]
 	default = simple
 [rebase]
